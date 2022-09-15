@@ -5,7 +5,7 @@ Suite Teardown      Close all Browsers
 *** Variables ***
 ${SERVER}         verkkokauppa.com
 ${BROWSER}        Chrome
-${PAGE URL}      http://${SERVER}/
+${PAGE URL}       http://${SERVER}/
 
 *** Test Cases ***
 Open Browser To Page
