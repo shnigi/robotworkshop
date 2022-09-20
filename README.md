@@ -83,6 +83,24 @@ Add .gitignore and add “results”
 Try running the test from command line “robot -d results .” Command “robot” initiates Robot Framework, “-d” gives directory name for test results and dot . at the end means all tests available from where the command is run recursively.
 Now test should execute, it will open Verkkokauppa.com, verify the page is open and close browser. Test results are generated.
 
+# **pycache**
+
+This damn folder is created every time we run Python code. When you run a program in Python, the interpreter compiles it to bytecode first (this is an oversimplification) and stores it in the **pycache** folder. If you look in there you will find a bunch of files sharing the names of the .py files in your project's folder, only their extensions will be either .pyc or .pyo. These are bytecode-compiled and optimized bytecode-compiled versions of your program's files, respectively.
+As a programmer, you can largely just ignore it... All it does is make your program start a little faster. When your scripts change, they will be recompiled, and if you delete the files or the whole folder and run your program again, they will reappear (unless you specifically suppress that behavior).
+
+Remove all **pycache** folders from project. Now let’s use Vscode to ignore the files.
+Create .vscode folder
+add settings.json file
+Copy paste settings:
+
+{
+"files.exclude": {
+"\*\*/**pycache**": true
+}
+}
+
+Next time you run Robot **pycache** folders should not be generated. If you are using different editor than vscode, you have to find a way to ignore these files or just leave them in place and trust the gitignore file setup earlier.
+
 # Part 4. Exercises - Exercise 1.
 
 Now that we have a working setup and all the basics explained create a new test or expand the first test case and do the following:
