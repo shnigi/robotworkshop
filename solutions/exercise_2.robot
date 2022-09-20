@@ -19,6 +19,7 @@ Find Iphone price
 User has navigated to verkkokauppa.com and homepage is open
     Open Browser    ${PAGE URL}    ${BROWSER}
     Maximize Browser Window
+    Set Window Size  1920  1080
     Page Should Be Open
 
 User types item id in the search field and presses search

@@ -11,6 +11,7 @@ ${PAGE URL}       http://${SERVER}/
 Find Iphone price
     Open Browser    ${PAGE URL}    ${BROWSER}
     Maximize Browser Window
+    Set Window Size  1920  1080
     Page Should Be Open
     Input Text      //input[@type="search"]     776425
     Wait Until Element Does Not Contain   //button[@name="submit"]      //button[@name="submit"][@aria-disabled="true"]
