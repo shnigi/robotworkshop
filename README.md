@@ -168,6 +168,15 @@ Run test and pass global variable for the robot command with –variable handle 
 
 Hints: Variables are set like ${variable} = stringvalue (notice robot syntax minimum 2 spaces after = mark)
 
+# Exercise 7. - Variables continue
+
+Create new file named as variablefile.py
+add following variable BROWSER = "headlesschrome"
+Pass the variablefile to the exercise 2 with command
+robot -d results --variablefile ./variablefile.py ./exercise_2.robot
+
+Notice how BROWSER variable is overridden from local test case variable. Also now we use native headless mode available in both Chrome and Firefox browsers.
+
 # That’s it!
 
 Next steps to learn:
