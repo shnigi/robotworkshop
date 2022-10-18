@@ -9,13 +9,13 @@ ${LOCALNUM2} =      8
 
 *** Test Cases ***
 Execute some mathematical operations
-    Sum two numbers
-    Subtract two numbers
+    Sum Two Numbers
+    Subtract Two Numbers
 
 
 *** Keywords ***
-Sum two numbers
+Sum Two Numbers
     Plus    ${GLOBAL_NUM1}    ${LOCALNUM1}
 
-Subtract two numbers
+Subtract Two Numbers
     Minus    ${GLOBAL_NUM2}    ${LOCALNUM2}

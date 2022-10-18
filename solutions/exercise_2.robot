@@ -12,10 +12,10 @@ ${PAGE URL}     http://${SERVER}/
 
 *** Test Cases ***
 Find Iphone price
-    Given User has navigated to verkkokauppa.com and homepage is open
-    When User types item id in the search field and presses search
-    And When user finds correct item in the search list
-    Then By clicking correct item price can be verified
+    Given User has navigated to verkkokauppa.Com And Homepage Is Open
+    When User Types Item Id In The Search Field And Presses Search
+    And When User Finds Correct Item In The Search List
+    Then By Clicking Correct Item Price Can Be Verified
 
 
 *** Keywords ***

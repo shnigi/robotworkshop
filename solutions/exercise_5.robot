@@ -9,8 +9,8 @@ Execute some mathematical operations
 
 
 *** Keywords ***
-Sum two numbers
-    plus    2    4
+Sum Two Numbers
+    Plus    2    4
 
-Subtract two numbers
-    minus    4    2
+Subtract Two Numbers
+    Minus    4    2

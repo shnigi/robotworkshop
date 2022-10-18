@@ -40,3 +40,7 @@ Configurations are in robocop.cfg file.
 robotidy .
 
 Runs Tidy on all files in this repo.
+
+See currently used tidy settings "transformers"
+
+robotidy --list
