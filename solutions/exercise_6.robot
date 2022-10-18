@@ -9,6 +9,7 @@ ${LOCALNUM2} =      8
 
 *** Test Cases ***
 Execute some mathematical operations
+    [TAGS]  sixth_exercise
     Sum Two Numbers
     Subtract Two Numbers
 

@@ -4,6 +4,7 @@ Library     ./Customlib.py
 
 *** Test Cases ***
 Execute some mathematical operations
+    [TAGS]  fifth_exercise
     Sum two numbers
     Subtract two numbers
 

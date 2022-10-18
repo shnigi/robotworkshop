@@ -11,6 +11,7 @@ ${PAGE URL}     http://${SERVER}/
 
 *** Test Cases ***
 Find Iphone price
+    [TAGS]  first_exercise
     Open Browser    ${PAGE URL}    ${BROWSER}
     Maximize Browser Window
     Set Window Size    1920    1080
@@ -24,5 +25,6 @@ Find Iphone price
     Wait Until Page Contains Element    //data[1][@data-price="current"]
     Element Should Contain    //data[1][@data-price="current"]    1 248,99
 
-Should Be Open
+*** Keywords ***
+Page Should Be Open
     Title Should Be    Verkkokauppa.com - todennäköisesti aina halvempi

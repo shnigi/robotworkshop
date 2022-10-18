@@ -12,6 +12,7 @@ ${PAGE URL}     http://${SERVER}/
 
 *** Test Cases ***
 Find Iphone price
+    [TAGS]  second_exercise
     Given User has navigated to verkkokauppa.Com And Homepage Is Open
     When User Types Item Id In The Search Field And Presses Search
     And When User Finds Correct Item In The Search List
