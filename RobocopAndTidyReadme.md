@@ -21,11 +21,11 @@ The innocent testers and developers have no intention to produce ugly code but s
 
 Following the coding guidelines established in the project are something very important to keep the code clean, readable and understandable by others and Robocop can help to uphold the law
 
-### To run Robocop on this repo
+### To run Robocop on this repo execute command
 
-robocop -A robocop.cfg
+robocop
 
-Configurations are in robocop.cfg file.
+Configurations are in pyproject.toml [tool.robocop]
 
 # Tidy
 
@@ -41,4 +41,4 @@ Runs Tidy on all files in this repo: robotidy .
 
 See currently used tidy settings "transformers": robotidy --list
 
-Use configuration file: robotidy --config ./tidy.toml .
+Configurations are in pyproject.toml [tool.robotidy]

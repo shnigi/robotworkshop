@@ -1,0 +1,29 @@
+[tool.robocop]
+# include = ['W0504']
+# exclude = ["0203"]
+# ignore = ["ignore_me.robot"]
+# format = "{source}:{line}:{col} [{severity}] {rule_id} {desc} (name)"
+# output = "robocop.log"
+
+threshold = "W"
+configure = [
+    "line-too-long:line_length:120",
+    "missing-doc-suite:severity:I",
+    "missing-doc-keyword:severity:I",
+    "missing-doc-test-case:severity:I",
+    "too-many-calls-in-test-case:severity:I",
+    "not-allowed-char-in-name:severity:I",
+    "wrong-case-in-keyword-name:severity:I",
+]
+
+[tool.robotidy]
+overwrite = true
+diff = true
+spacecount = 2
+continuation-indent = 4
+transform = [
+   "SplitTooLongLine",
+   "RenameTestCases",
+   "RenameKeywords",
+   "NormalizeNewLines"
+]
