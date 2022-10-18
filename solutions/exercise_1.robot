@@ -25,6 +25,7 @@ Find Iphone price
     Wait Until Page Contains Element    //data[1][@data-price="current"]
     Element Should Contain    //data[1][@data-price="current"]    1 248,99
 
+
 *** Keywords ***
 Page Should Be Open
     Title Should Be    Verkkokauppa.com - todennäköisesti aina halvempi

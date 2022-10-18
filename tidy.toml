@@ -9,7 +9,8 @@ transform = [
    "DiscardEmptySections:allow_only_comments=True",
    "SplitTooLongLine",
    "RenameTestCases",
-   "RenameKeywords"
+   "RenameKeywords",
+   "NormalizeNewLines:enabled=true"
 ]
 configure = [
 ]
