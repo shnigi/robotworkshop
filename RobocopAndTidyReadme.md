@@ -37,10 +37,8 @@ Configurations are in robocop.cfg file.
 
 ### To run Tidy
 
-robotidy .
+Runs Tidy on all files in this repo: robotidy .
 
-Runs Tidy on all files in this repo.
+See currently used tidy settings "transformers": robotidy --list
 
-See currently used tidy settings "transformers"
-
-robotidy --list
+Use configuration file: robotidy --config ./tidy.toml .

@@ -182,7 +182,7 @@ Robot Framework can be easily extended with custom libraries that are written wi
 Robot Framework can use variables. Variables should be lowercase when passed as test parameters or local variables. If variable is written in uppercase it should be a global variable. Copy exercise 5 and let’s modify it.
 Add first number as global variable and second as local variable
 Add **_ Variables _** section after settings and add local variable values there
-Run test and pass global variable for the robot command with –variable handle robot -d results --variable GLOBAL_NUM1:2 --variable GLOBAL_NUM2:4 ./solutions/exercise_6.robot variable is set with NAME:value
+Run test and pass global variable for the robot command with –variable handle: robot -d results --variable GLOBAL_NUM1:2 --variable GLOBAL_NUM2:4 ./solutions/exercise_6.robot variable is set with NAME:value
 
 Hints: Variables are set like ${variable} = stringvalue (notice robot syntax minimum 2 spaces after = mark)
 
