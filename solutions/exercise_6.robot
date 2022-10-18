@@ -1,18 +1,21 @@
 *** Settings ***
-Library      ./Customlib.py
+Library     ./Customlib.py
+
 
 *** Variables ***
-${localnum1} =  5
-${localnum2} =  8
+${LOCALNUM1} =      5
+${LOCALNUM2} =      8
+
 
 *** Test Cases ***
 Execute some mathematical operations
     Sum two numbers
     Subtract two numbers
 
+
 *** Keywords ***
 Sum two numbers
-    plus    ${GLOBAL_NUM1}    ${localnum1}
+    Plus    ${GLOBAL_NUM1}    ${LOCALNUM1}
 
 Subtract two numbers
-    minus    ${GLOBAL_NUM2}    ${localnum2}
+    Minus    ${GLOBAL_NUM2}    ${LOCALNUM2}

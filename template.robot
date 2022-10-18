@@ -1,17 +1,21 @@
 *** Settings ***
 Library             SeleniumLibrary
-Suite Teardown      Close all Browsers
+
+Suite Teardown      Close All Browsers
+
 
 *** Variables ***
-${SERVER}         verkkokauppa.com
-${BROWSER}        Chrome
-${PAGE URL}       http://${SERVER}/
+${SERVER}       verkkokauppa.com
+${BROWSER}      Chrome
+${PAGE URL}     http://${SERVER}/
+
 
 *** Test Cases ***
 Open Browser To Page
     Open Browser    ${PAGE URL}    ${BROWSER}
     Maximize Browser Window
     Page Should Be Open
+
 
 *** Keywords ***
 Page Should Be Open
