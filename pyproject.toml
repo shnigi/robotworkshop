@@ -7,13 +7,11 @@
 
 threshold = "W"
 configure = [
-    "line-too-long:line_length:120",
     "missing-doc-suite:severity:I",
     "missing-doc-keyword:severity:I",
     "missing-doc-test-case:severity:I",
     "too-many-calls-in-test-case:severity:I",
     "not-allowed-char-in-name:severity:I",
-    "wrong-case-in-keyword-name:severity:I",
 ]
 
 [tool.robotidy]
