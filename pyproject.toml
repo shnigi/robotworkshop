@@ -19,9 +19,15 @@ overwrite = true
 diff = true
 spacecount = 2
 continuation-indent = 4
-transform = [
-   "SplitTooLongLine",
-   "RenameTestCases",
-   "RenameKeywords",
-   "NormalizeNewLines"
+# transform = [
+#    "SplitTooLongLine",
+#    "RenameTestCases",
+#    "RenameKeywords",
+#    "NormalizeNewLines"
+# ]
+configure = [
+    "SplitTooLongLine:enabled=True",
+    "RenameTestCases:enabled=True",
+    "RenameKeywords:enabled=True",
+    "NormalizeNewLines:enabled=True"
 ]
