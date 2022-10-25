@@ -37,7 +37,7 @@ Configurations are in pyproject.toml [tool.robocop]
 
 ### To run Tidy
 
-Runs Tidy on all files in this repo: robotidy .
+Runs Tidy on all files in this repo: robotidy
 
 See currently used tidy settings "transformers": robotidy --list
 

@@ -4,7 +4,12 @@
 # ignore = ["ignore_me.robot"]
 # format = "{source}:{line}:{col} [{severity}] {rule_id} {desc} (name)"
 # output = "robocop.log"
-
+paths = [
+    ".",
+]
+reports = [
+    "all",
+]
 threshold = "W"
 configure = [
     "missing-doc-suite:severity:I",
@@ -15,9 +20,12 @@ configure = [
 ]
 
 [tool.robotidy]
+src = [
+    ".",
+]
 overwrite = true
 diff = true
-spacecount = 2
+spacecount = 4
 continuation-indent = 4
 # transform = [
 #    "SplitTooLongLine",

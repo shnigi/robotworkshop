@@ -4,14 +4,14 @@ Library     ./Customlib.py
 
 *** Test Cases ***
 Execute some mathematical operations
-  [Tags]  fifth_exercise
-  Sum Two Numbers
-  Subtract Two Numbers
+    [Tags]    fifth_exercise
+    Sum Two Numbers
+    Subtract Two Numbers
 
 
 *** Keywords ***
 Sum Two Numbers
-  Plus  2  4
+    Plus    2    4
 
 Subtract Two Numbers
-  Minus  4  2
+    Minus    4    2
